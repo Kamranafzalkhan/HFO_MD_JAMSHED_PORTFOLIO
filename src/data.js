@@ -1,4 +1,4 @@
-import rank from "./assets/gallery/7.jpg";
+import rank from "./assets/gallery/7.JPG";
 import r1 from "./assets/gallery/r1.jpeg";
 import r2 from "./assets/gallery/r2.jpeg";
 import r11 from "./assets/gallery/11.jpeg";
