@@ -1475,7 +1475,7 @@ export function CareerMap({
         </div>
 
         {/* ACTIVE POSTING CARD */}
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           {activePosting && (
             <motion.div
               key={`${activePosting.title}-${active}`}
@@ -1508,7 +1508,7 @@ export function CareerMap({
               </small>
             </motion.div>
           )}
-        </AnimatePresence>
+        </AnimatePresence> */}
 
       </div>
 

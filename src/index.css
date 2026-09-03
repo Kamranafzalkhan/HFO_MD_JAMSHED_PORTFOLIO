@@ -6506,7 +6506,7 @@ button:focus-visible {
 /* -----------------------------------------
    MOBILE
 ----------------------------------------- */
-
+/* 
 @media (max-width: 700px) {
 
   .journey-map-column {
@@ -6538,6 +6538,61 @@ button:focus-visible {
 
   .india-map-svg {
     width: 100%;
+  }
+} */
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .journey-map-column {
+    margin-top: 35px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-map-heading {
+    width: 92%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .journey-map-heading h2 {
+    font-size: 30px;
+  }
+
+  .journey-map-heading p {
+    font-size: 13px;
+  }
+
+  .journey-map-sticky {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map-stage {
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .india-map-svg {
+    width: 92%;       /* Don't use 100% */
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
   }
 }
 
