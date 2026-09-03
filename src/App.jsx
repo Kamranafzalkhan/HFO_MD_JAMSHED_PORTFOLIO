@@ -98,7 +98,6 @@ function MainWebsite() {
   const navigation = [
     ["home", "Home"],
     ["journey", "Journey"],
-    ["postings", "Postings"],
     ["training", "Training"],
     ["honours", "Honours"],
     ["gallery", "Gallery"],
