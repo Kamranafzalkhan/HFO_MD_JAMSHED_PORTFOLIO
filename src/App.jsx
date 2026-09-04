@@ -100,6 +100,7 @@ function MainWebsite() {
     ["journey", "Journey"],
     ["training", "Training"],
     ["honours", "Honours"],
+    /*["resume", "Resume"],*/
     ["legacy", "Legacy"],
   ];
 
@@ -151,9 +152,15 @@ function MainWebsite() {
         >
           {navigation.map(([id, label]) => (
             <button
-              key={id}
-              className="nav-link"
-              onClick={() => navigate(id)}
+               key={id}
+      className="nav-link"
+      onClick={() => {
+        if (id === "resume") {
+          window.open("/HFO_MD_Jamshed_Afzal_Resume.pdf", "_blank");
+        } else {
+          navigate(id);
+        }
+      }}
             >
               <span>{label}</span>
             </button>
@@ -504,7 +511,6 @@ function MainWebsite() {
             GALLERY
         ================================================== */}
 
-        
 
 
         {/* ==================================================
@@ -562,7 +568,16 @@ function MainWebsite() {
           </div>
 
         </section>
-
+        <a
+  href="https://drive.google.com/file/d/1y5beQ-eVX1_jzn5-sGJqv2h2yY2DI5fH/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume-button"
+>
+  <span className="resume-icon">📄</span>
+  <span>VIEW RESUME</span>
+  <span className="resume-arrow">↗</span>
+</a>
       </main>
 
 
