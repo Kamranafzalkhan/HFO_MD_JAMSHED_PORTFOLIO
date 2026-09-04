@@ -1323,6 +1323,11 @@ button:focus-visible {
 
 }
 
+.hero-portrait img{
+  height: 100%;
+  width: 100%;
+}
+
 
 .portrait-placeholder {
 

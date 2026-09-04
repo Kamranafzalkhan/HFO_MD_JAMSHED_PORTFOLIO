@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SplashScreen from "./splash";
 
-import heroPhoto from "./assets/gallery/main.png";
+import heroPhoto from "./assets/gallery/P_R.jpeg";
 
 import {
   motion,
@@ -100,7 +100,6 @@ function MainWebsite() {
     ["journey", "Journey"],
     ["training", "Training"],
     ["honours", "Honours"],
-    ["gallery", "Gallery"],
     ["legacy", "Legacy"],
   ];
 
@@ -505,37 +504,7 @@ function MainWebsite() {
             GALLERY
         ================================================== */}
 
-        <section
-          id="gallery"
-          className="section gallery"
-        >
-
-          <SectionHeading
-            number="04 / PHOTO ARCHIVE"
-            title="The photographs tell the rest."
-            description="
-              These slots are intentionally waiting for the real
-              photographs. After the surprise, replace them with
-              his actual memories.
-            "
-          />
-
-
-          <div className="gallery-grid">
-
-            {gallery.map((photo) => (
-
-              <PhotoCard
-                key={photo.id}
-                photo={photo}
-                onOpen={() => setSelectedPhoto(photo)}
-              />
-
-            ))}
-
-          </div>
-
-        </section>
+        
 
 
         {/* ==================================================
@@ -609,9 +578,7 @@ function MainWebsite() {
             IAF / LEGACY
           </strong>
 
-          <span>
-            A PRIVATE FAMILY TRIBUTE
-          </span>
+          
 
         </div>
 
